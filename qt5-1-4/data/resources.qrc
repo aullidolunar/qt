@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/icons">
+		<file alias="main32">main_32.png</file>
+		<file alias="main48">main_48.png</file>
+		<file alias="/linux/os">tux-logo.xpm</file>
+		<file alias="/windows/os">windows-vista.xpm</file>
+	</qresource>
+</RCC>
