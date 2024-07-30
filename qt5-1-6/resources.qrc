@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file alias="save">disk1.png</file>
+		<file alias="close">close1.png</file>
+		<file alias="qt">qt1.png</file>
+		<file alias="ok">ok1.png</file>
+	</qresource>
+</RCC>
