@@ -1,0 +1,6 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/main">
+		<file alias="/+windows/platform">windows-logo-64.png</file>
+	</qresource>
+</RCC>
