@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/main">
+		<file alias="/+linux/platform">tux-logo-64.png</file>
+	</qresource>
+	<qresource prefix="/icons">
+		<file alias="main">qt_main.ico</file>
+	</qresource>
+</RCC>
