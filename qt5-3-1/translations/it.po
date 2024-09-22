@@ -1,0 +1,5 @@
+msgid "qt5-3-1"
+msgstr ""
+
+msgid "Compile with QT 5.15.15 with Meson 1.5.1"
+msgstr ""

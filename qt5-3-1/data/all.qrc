@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/main">
+    <file alias="/platform">mac-logo-64.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file alias="quit">quit.png</file>
+    <file alias="ok">ok_blue2.png</file>
+  </qresource>
+</RCC>
