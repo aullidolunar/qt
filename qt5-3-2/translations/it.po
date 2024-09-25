@@ -1,0 +1,7 @@
+#: _build/data/qt5-3-2.template.desktop.in:4
+msgid "qt5-3-2"
+msgstr ""
+
+#: _build/data/qt5-3-2.template.desktop.in:5
+msgid "Compile with Qt @0@ and with Meson @1@"
+msgstr ""

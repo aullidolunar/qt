@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: qt 3.2.0.1\n"
+"Report-Msgid-Bugs-To: \"aullidolunar@gmail.com\"\n"
+"POT-Creation-Date: 2024-09-24 17:10-0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: aullidolunar <aullidolunar@gmail.com>\n"
+"Language-Team: aullidolunar\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: _build/data/qt5-3-2.template.desktop.in:4
+msgid "qt5-3-2"
+msgstr "programa qt5-3-2"
+
+#: _build/data/qt5-3-2.template.desktop.in:5
+msgid "Compile with Qt @0@ and with Meson @1@"
+msgstr "Compilado en Qt @0@ con Meson @1@"

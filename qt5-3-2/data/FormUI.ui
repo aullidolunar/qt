@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormUI</class>
+ <widget class="QWidget" name="FormUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="5">
+    <widget class="QPushButton" name="btn_quit">
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&amp;Quit</string>
+     </property>
+     <property name="icon">
+      <iconset resource="all.qrc">
+       <normaloff>:/icons/quit</normaloff>:/icons/quit</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="btn_ok">
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&amp;OK</string>
+     </property>
+     <property name="icon">
+      <iconset resource="all.qrc">
+       <normaloff>:/icons/ok</normaloff>:/icons/ok</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>Show QT about dialog</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_name">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Type your message:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="comboBox1">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Choose a language</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Spanish</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>French</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Italian</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Portuguese</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>English</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="5" rowspan="3">
+    <widget class="QLabel" name="os_image">
+     <property name="toolTip">
+      <string>Your platform icon</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="5">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="2" colspan="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="all.qrc"/>
+ </resources>
+ <connections/>
+</ui>
