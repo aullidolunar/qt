@@ -1,0 +1,26 @@
+# French translations for "qt5-3-3" package.
+# Copyright (C) 2024 THE "qt5-3-3"'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the "qt5-3-3" package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \"qt5-3-3\" \"3.3.0.0\"\n"
+"Report-Msgid-Bugs-To: \"aullidolunar@gmail.com\"\n"
+"POT-Creation-Date: 2024-09-25 22:06-0700\n"
+"PO-Revision-Date: 2024-09-25 22:06-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: data/qt5-3-3.template.desktop.in:4
+msgid "qt5-3-3"
+msgstr ""
+
+#: data/qt5-3-3.template.desktop.in:5
+msgid "Compile with Qt @0@ and with Meson @1@"
+msgstr ""

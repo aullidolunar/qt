@@ -1,0 +1,1 @@
+option('WITH_QT', type: 'string', value: '5')
