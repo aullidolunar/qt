@@ -9,7 +9,7 @@
 # ninja|samu -C _build [run]
 
 # to regenerate the build env:
-# meson setup _build --reconfigure
+# meson setup _build
 
 # add/change strings in *.cpp and/or *.ui
 # and/or
@@ -19,7 +19,7 @@
 # edit manually the affected *.ts and *.po files then rebuild:
 # meson compile -C _build [run]
 
-project('qt', 'cpp', version : '3.3.0.2', default_options : ['cpp_std=c++17', 'warning_level=3'])
+project('qt', 'cpp', version : '3.3.0.1', default_options : ['cpp_std=c++17', 'warning_level=3'])
 
 QT_VER          = get_option('WITH_QT')
 
@@ -32,7 +32,8 @@ PROGRAM_DEFS    = ['-DPROGRAM_NAME="' + PROGRAM_NAME + '"',
 
 QT_MOD          = import('qt' + QT_VER)
 qt_dep          = dependency('qt' + QT_VER, modules: ['Widgets'], required: true)
-QT_FULL_VERSION = qt_dep.version()
+MESON_VERSION   = meson.version()
+TOOLKIT_VERSION = qt_dep.version()
 PROGRAM_DESC    = 'Compile with Qt @0@ and with Meson @1@'
 
 IS_WIN32        = (build_machine.system() == 'windows') ? true : false
@@ -41,6 +42,7 @@ FS              = import('fs')
 
 PROGRAM_SOURCES = []
 TS_SOURCE_FILES = []
+PROGRAM_INCDIRS = []
 
 subdir('scripts')
 subdir('src')
@@ -52,6 +54,7 @@ bin_path = executable(
 	PROGRAM_SOURCES,
 	dependencies : [qt_dep],
 	cpp_args: PROGRAM_DEFS,
+	include_directories: PROGRAM_INCDIRS,
 	native: true
 )
 

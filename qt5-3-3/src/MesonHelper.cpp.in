@@ -1,0 +1,10 @@
+#include "MesonHelper.h"
+
+void showAboutDlg(QWidget* parent) {
+  QString message = QObject::tr("@PROGRAM_DESC@");
+  message.replace("@cero@", "@TOOLKIT_VERSION@");
+  message.replace("@uno@", "@MESON_VERSION@");
+  
+  QMessageBox::about(parent, QObject::tr("About program"), message);
+}
+	

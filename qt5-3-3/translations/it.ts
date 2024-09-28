@@ -4,7 +4,7 @@
 <context>
     <name>FormUI</name>
     <message>
-        <location filename="../data/FormUI.ui" line="37"/>
+        <location filename="../data/FormUI.ui" line="132"/>
         <source>&amp;OK</source>
         <translation type="unfinished"></translation>
     </message>
@@ -14,47 +14,52 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="73"/>
+        <location filename="../data/FormUI.ui" line="45"/>
         <source>Choose a language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="78"/>
+        <location filename="../data/FormUI.ui" line="50"/>
         <source>Spanish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="83"/>
+        <location filename="../data/FormUI.ui" line="55"/>
         <source>French</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="88"/>
+        <location filename="../data/FormUI.ui" line="60"/>
         <source>Italian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="93"/>
+        <location filename="../data/FormUI.ui" line="65"/>
         <source>Portuguese</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="98"/>
+        <location filename="../data/FormUI.ui" line="70"/>
         <source>English</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="106"/>
+        <location filename="../data/FormUI.ui" line="78"/>
         <source>Your platform icon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="48"/>
+        <location filename="../data/FormUI.ui" line="111"/>
+        <source>&amp;About...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../data/FormUI.ui" line="122"/>
         <source>Show QT about dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../data/FormUI.ui" line="62"/>
+        <location filename="../data/FormUI.ui" line="34"/>
         <source>Type your message:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -62,13 +67,23 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/MainWindow.cpp" line="45"/>
+        <location filename="../src/MainWindow.cpp" line="49"/>
         <source>This is your inputed text:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="60"/>
+        <location filename="../src/MainWindow.cpp" line="64"/>
         <source>Please input some information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../_build/src/MesonHelper.cpp" line="4"/>
+        <source>Compile with Qt @0@ and with Meson @1@</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../_build/src/MesonHelper.cpp" line="8"/>
+        <source>About program</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

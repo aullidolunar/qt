@@ -1,10 +1,10 @@
-# python pofiles.py msginit_executable program_pot po_dir langs
+# python pofiles.py msgmerge_executable program_pot po_dir langs
 
 import os
 import sys
 import subprocess
 
-msginit_executable = sys.argv[1]
+msgmerge_executable = sys.argv[1]
 program_pot = sys.argv[2]
 po_dir = sys.argv[3]
 langs = sys.argv[4:]
@@ -14,14 +14,11 @@ os.chdir(po_dir)
 
 for lang in langs:
 	subprocess.call([
-		msginit_executable,
-		'-i',
+		msgmerge_executable,
+		'-U',
+		'--backup=none',
+		f'{lang}.po',
 		program_pot,
-		'-l',
-		f'{lang}.UTF-8',
-		'--no-translator',
-		'-o',
-		f'{lang}.po'
 	])
 
 os.chdir(saved_cwd)

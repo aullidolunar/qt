@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>290</width>
+    <width>358</width>
     <height>150</height>
    </rect>
   </property>
@@ -25,34 +25,6 @@
      <property name="icon">
       <iconset resource="all.qrc">
        <normaloff>:/icons/quit</normaloff>:/icons/quit</iconset>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="3">
-    <widget class="QPushButton" name="btn_ok">
-     <property name="toolTip">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>&amp;OK</string>
-     </property>
-     <property name="icon">
-      <iconset resource="all.qrc">
-       <normaloff>:/icons/ok</normaloff>:/icons/ok</iconset>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1" colspan="3">
-    <widget class="QCheckBox" name="checkBox">
-     <property name="text">
-      <string>Show QT about dialog</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="QLineEdit" name="lineEdit_name">
-     <property name="text">
-      <string notr="true"/>
      </property>
     </widget>
    </item>
@@ -117,19 +89,6 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="2">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
    <item row="5" column="2" colspan="2">
     <spacer name="horizontalSpacer_2">
      <property name="orientation">
@@ -142,6 +101,48 @@
       </size>
      </property>
     </spacer>
+   </item>
+   <item row="5" column="4">
+    <widget class="QPushButton" name="btn_about">
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&amp;About...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="all.qrc">
+       <normaloff>:/icons/home</normaloff>:/icons/home</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="4">
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>Show QT about dialog</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QPushButton" name="btn_ok">
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&amp;OK</string>
+     </property>
+     <property name="icon">
+      <iconset resource="all.qrc">
+       <normaloff>:/icons/ok</normaloff>:/icons/ok</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_name">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

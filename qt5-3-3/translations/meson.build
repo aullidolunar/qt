@@ -4,12 +4,12 @@
 # In most cases you don't need to edit this meson.build file.
 # If you need to add/remove languages, edit LINGUAS located in this directory
 
-translations_file = files('LINGUAS')
-
 lupdate_executable = find_program('lupdate', required: true)
 xgettext_executable = find_program('xgettext', required: true)
-msginit_executable = find_program('msginit', required: true)
+msgmerge_executable = find_program('msgmerge', required: true)
 msgfmt_executable = find_program('msgfmt', required: true)
+
+translations_file = files('LINGUAS')
 
 program_pot = custom_target(
   input: DESKTOP_FILE_IN,
@@ -18,6 +18,7 @@ program_pot = custom_target(
     xgettext_executable,
 	'-d',
 	PROGRAM_NAME,
+	'--from-code=UTF-8',
 	'--package-name="' + PROGRAM_NAME + '"',
 	'--package-version="' + PROGRAM_VERSION + '"',
 	'--msgid-bugs-address="aullidolunar@gmail.com"',
@@ -64,7 +65,7 @@ run_target(
   command: [
     PYTHON_EXECUTABLE,
     PY_SCRIPTS[1], # pofiles.py
-    msginit_executable,
+    msgmerge_executable,
     program_pot.full_path(),  
     meson.current_source_dir(),
     langs
@@ -98,13 +99,13 @@ desktopfile_in = custom_target(
 
 desktopfile = custom_target(
 	input: desktopfile_in,
-	output: '@BASENAME@',
+	output: '@BASENAME0@',
 	command: [
 		PYTHON_EXECUTABLE,
 		PY_SCRIPTS[2], # desktop.py
 		'@INPUT@',
-		qt_dep.version(),
-		meson.version(),
+		TOOLKIT_VERSION,
+		MESON_VERSION,
 		'@OUTPUT@'
 	]
 )
