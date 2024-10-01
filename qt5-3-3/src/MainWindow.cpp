@@ -1,4 +1,5 @@
 #include <QFileSelector>
+#include <QMessageBox>
 #include "ui_FormUI.h"
 #include "MainWindow.h"
 #include "MesonHelper.h"
@@ -38,7 +39,7 @@ MainWindow::MainWindow(MyTranslator *translator, QWidget *parent) :
 	});
 	
 	connect(ui->btn_about, &QPushButton::clicked, [=]() {
-		showAboutDlg(this);
+		showAboutDlg();
 	});
 	
 	/* 0: title; 1: Spanish; 2: french; 3: Italian; 4: Portuguese; 5: English */
@@ -75,6 +76,14 @@ void MainWindow::switchToLanguage(int lang) {
 		m_Translator->changeLanguage(langs[lang]);
 		ui->retranslateUi(this);
 	}
+}
+
+void MainWindow::showAboutDlg() {
+  QString message(PROGRAM_DESC);
+  message.replace("@0@", TOOLKIT_VERSION);
+  message.replace("@1@", MESON_VERSION);
+  
+  QMessageBox::about(this, QObject::tr("About program"), message);
 }
 
 MainWindow::~MainWindow() {

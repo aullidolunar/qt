@@ -77,12 +77,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../_build/src/MesonHelper.cpp" line="4"/>
+        <location filename="../_build/src/MesonHelper.h" line="4"/>
         <source>Compile with Qt @0@ and with Meson @1@</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../_build/src/MesonHelper.cpp" line="8"/>
+        <location filename="../src/MainWindow.cpp" line="85"/>
         <source>About program</source>
         <translation type="unfinished"></translation>
     </message>

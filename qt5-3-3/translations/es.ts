@@ -77,12 +77,12 @@
         <translation>Escribe un texto informativo</translation>
     </message>
     <message>
-        <location filename="../_build/src/MesonHelper.cpp" line="4"/>
+        <location filename="../_build/src/MesonHelper.h" line="4"/>
         <source>Compile with Qt @0@ and with Meson @1@</source>
-        <translation>Compilado con Qt @0@ y con Meson @1@</translation>
+        <translation>Compilado con Qt @0@ y Meson @1@</translation>
     </message>
     <message>
-        <location filename="../_build/src/MesonHelper.cpp" line="8"/>
+        <location filename="../src/MainWindow.cpp" line="85"/>
         <source>About program</source>
         <translation>Muestra Acerca de QT</translation>
     </message>

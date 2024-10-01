@@ -19,6 +19,7 @@ public:
 protected:
 	void showInfo(const QString&);
 	void doOK();
+	void showAboutDlg();
 protected slots:
 	void switchToLanguage(int);
 };

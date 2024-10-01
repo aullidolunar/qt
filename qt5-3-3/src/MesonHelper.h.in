@@ -1,0 +1,6 @@
+#ifndef _MESON_HELPER_H_
+#define _MESON_HELPER_H_
+
+#define PROGRAM_DESC QObject::tr("@PROGRAM_DESC@")
+
+#endif
