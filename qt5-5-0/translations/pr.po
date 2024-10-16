@@ -1,0 +1,7 @@
+#: build/data/qt5-5-0.desktop.in:4
+msgid "qt5-5-0"
+msgstr ""
+
+#: build/data/qt5-5-0.desktop.in:5
+msgid "Qt application demo"
+msgstr ""

@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/main">
+    <file alias="platform">qt_main.ico</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file alias="home">home.png</file>
+    <file alias="quit">quit.png</file>
+    <file alias="ok">ok_blue2.png</file>
+  </qresource>
+</RCC>
